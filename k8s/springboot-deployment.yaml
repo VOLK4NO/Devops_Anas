@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gestion-ue-student
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gestion-ue-student
+  template:
+    metadata:
+      labels:
+        app: gestion-ue-student
+    spec:
+      containers:
+      - name: app
+        image: selmi/gestion_ue_student
+        ports:
+        - containerPort: 8080
