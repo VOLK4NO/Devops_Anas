@@ -13,6 +13,12 @@ pipeline {
                 checkout scm
             }
         }
+	
+	stage('Maven Cache') {
+    		steps {
+        		sh 'mkdir -p ~/.m2'
+    		}
+	}
 
 
         stage('Build with Maven') {
