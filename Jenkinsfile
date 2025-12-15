@@ -93,4 +93,8 @@ pipeline {
             echo '❌ Pipeline failed!'
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3d6222131756dd3d315a86cac6b39392d7473ac0
