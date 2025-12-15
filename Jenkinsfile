@@ -14,12 +14,6 @@ pipeline {
             }
         }
 
-        stage('Clean & Compile') {
-            steps {
-                echo 'Nettoyage et compilation du projet'
-                sh 'mvn clean compile'
-            }
-        }
 
         stage('Build with Maven') {
             steps {
