@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'rouadhafer/gestion_ue_student'
+        DOCKER_IMAGE = 'selmianas/students_management_anas'
         DOCKER_TAG   = 'latest'
     }
 
